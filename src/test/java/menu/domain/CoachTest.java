@@ -2,6 +2,7 @@ package menu.domain;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+import menu.domain.coach.Coach;
 import menu.exception.ExceptionMessage;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;

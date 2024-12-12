@@ -4,6 +4,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 import java.util.List;
+import menu.domain.coach.Coaches;
 import menu.exception.ExceptionMessage;
 import org.junit.jupiter.api.Test;
 

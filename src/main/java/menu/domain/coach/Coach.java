@@ -1,4 +1,4 @@
-package menu.domain;
+package menu.domain.coach;
 
 import menu.exception.BadRequestException;
 import menu.exception.ExceptionMessage;
@@ -15,12 +15,12 @@ public class Coach {
         this.name = name;
     }
 
-    private void validateCoachName(final String name) {
+    private static void validateCoachName(final String name) {
         validateNullOrEmptyCheck(name);
         validateCoachNameLengthCheck(name);
     }
 
-    private void validateCoachNameLengthCheck(final String name) {
+    private static void validateCoachNameLengthCheck(final String name) {
         if (name.length() < MINIMUM_COACH_NAME_LENGTH || name.length() > MAXIMUM_COACH_NAME_LENGTH) {
             throw new BadRequestException(ExceptionMessage.INVALID_COACH_NAME_LENGTH);
         }

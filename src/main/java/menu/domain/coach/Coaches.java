@@ -1,4 +1,4 @@
-package menu.domain;
+package menu.domain.coach;
 
 import java.util.Collections;
 import java.util.List;
@@ -15,7 +15,7 @@ public class Coaches {
         this.coaches = coachNames.stream().map(Coach::new).collect(Collectors.toList());
     }
 
-    private void validateCoachNameSize(final List<String> coachNames) {
+    private static void validateCoachNameSize(final List<String> coachNames) {
         if (coachNames.size() < 2 || coachNames.size() > 5) {
             throw new BadRequestException(ExceptionMessage.INVALID_COACH_COUNT);
         }

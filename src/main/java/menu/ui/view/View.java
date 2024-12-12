@@ -15,8 +15,15 @@ public class View extends OutputView {
 
     public List<String> enterCoachNames() {
         displayCoachNamesInput();
-
         return Arrays.stream(readLine().split(","))
+                .map(String::trim)
+                .collect(Collectors.toList());
+    }
+
+    public List<String> enterUnwantedMenu(final String coachName) {
+        displayUnwantedMenu(coachName);
+        return Arrays.stream(readLine().split(","))
+                .map(String::trim)
                 .collect(Collectors.toList());
     }
 
