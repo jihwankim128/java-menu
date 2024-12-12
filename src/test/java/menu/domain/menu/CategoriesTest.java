@@ -3,6 +3,8 @@ package menu.domain.menu;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import java.util.List;
+import menu.domain.category.Categories;
+import menu.domain.category.Category;
 import org.junit.jupiter.api.Test;
 
 class CategoriesTest {

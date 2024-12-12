@@ -1,4 +1,6 @@
-package menu.domain.menu;
+package menu.domain.category;
+
+import java.util.Arrays;
 
 public enum Category {
 
@@ -17,6 +19,13 @@ public enum Category {
 
     public static Category from(final int number) {
         return values()[number - 1];
+    }
+
+    public static Category from(final String name) {
+        return Arrays.stream(values())
+                .filter(category -> category.name.equals(name))
+                .findFirst()
+                .get();
     }
 
     public String getName() {

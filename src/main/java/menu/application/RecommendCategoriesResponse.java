@@ -2,8 +2,8 @@ package menu.application;
 
 import java.util.List;
 import java.util.stream.Collectors;
-import menu.domain.menu.Categories;
-import menu.domain.menu.Category;
+import menu.domain.category.Categories;
+import menu.domain.category.Category;
 
 public class RecommendCategoriesResponse {
 
